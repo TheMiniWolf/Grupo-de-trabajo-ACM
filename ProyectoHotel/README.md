@@ -73,9 +73,10 @@ generado por Hibernate). No requieren PostgreSQL.
 
 ```
 ProyectoHotel/
+├── Documento_ACM.pdf                   # Documento técnico principal
+├── diagramarelacional.png              # Diagrama relacional
 ├── docs/                                  # Documentación del proyecto
 │   ├── Primera Entrega Proyecto Final 1.pdf   (enunciado)
-│   ├── Documento Técnico (...).docx            (análisis y requerimientos)
 │   └── modelo-relacional.md                    (diagrama ER + normalización)
 ├── src/main/java/com/acm/proyectohotel/
 │   ├── ProyectoHotelApplication.java
@@ -96,6 +97,8 @@ ProyectoHotel/
 - El diagrama relacional está en [`docs/modelo-relacional.md`](docs/modelo-relacional.md)
   (Mermaid, se renderiza en GitHub). Si modificas el modelo, actualiza las
   entidades, la migración y el diagrama de forma coherente.
+- `Documento_ACM.pdf` y `diagramarelacional.png` están en la raíz de
+  `ProyectoHotel` para facilitar su acceso directo.
 - Para añadir cambios al esquema, crea una **nueva** migración
   (`V4__...sql`); nunca edites una migración ya aplicada.
 - Los datos de catálogo (`rol`, `tipo_habitacion`) se cargan automáticamente
